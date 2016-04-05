@@ -7,7 +7,7 @@
 <p>Make directory where you want to do the project</p>
 
 <p>Make virtualenv using python3 with </p>
-	virtualenv -p python3 envname
+	virtualenv -p python3 venv
 
 <p>Activate virtualenv by using </p>
 	source envname/bin/activate
