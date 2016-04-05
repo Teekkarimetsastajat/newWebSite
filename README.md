@@ -1,12 +1,14 @@
 # New website of Teekkarimetsästäjät
 
 
-Install mariadb
+<p>Install mariadb and create database and user</p>
 <p>Install virtualenv</p>
 
 <p>Make directory where you want to do the project</p>
+
 <p>Make virtualenv using python3 with </p>
 	virtualenv -p python3 envname
+
 <p>Activate virtualenv by using </p>
 	source envname/bin/activate
 
