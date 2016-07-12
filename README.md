@@ -1,5 +1,5 @@
 # New website of Teekkarimetsästäjät
-
+# JEE
 
 <p>Install mariadb and create database and user</p>
 <p>Install virtualenv</p>
