@@ -4,11 +4,9 @@
         <title>sLerstikan lisäys</title>
     </head>
     <body>
-        <div>
-            Kuka dokaa? {%  %}
-        </div>
-        <div>
-            Mitä dokaa? {%  %} Ja monta? {%  %}
+        <div id="normal">
+            Kuka dokaa? {% hlöValikko %}<br>
+            Mitä dokaa? {% pirtelöValikko %} Ja monta? {% field + validation only numbers %}
         </div>
     </body>
 </html>
