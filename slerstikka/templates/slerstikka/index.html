@@ -4,16 +4,28 @@
         <title>sLerstikka</title>
     </head>
     <body>
-        <div>
-            <h2>{% kirjautunut_hlö %} {% saldo %} oravannahkaa</h2>
+        <div id="pageHeader">
+            <h2>sLerstikka</h2>
+            <a2 href="new.html">Lisää pirtelöö</a2>
         </div>
-        <div>
+        <div id="balance">
             <h3>Tilanne</h3>
-            {% kuka %} {% saldo %} oravannahkaa
+            {% do %}
+                {% if saldo < 0 %}
+                    <p1>{% kuka saldo %} oravannahkaa</p1><br>
+                {% else %}
+                    <p>{% kuka saldo %} oravannahkaa</p><br>
+                {% endif %}
+            {% end %}
         </div>
-        <div>
-            <h3>Historia</h3>
-            {% milloin %} {% kuka %} {% monta %} {% mitä %}
+        <div id="history">
+            <h3>Historiaa</h3>
+            {% do %}
+                {% milloin kuka monta mitä %}
+                    {% if time.now+5min < milloin %} 
+                        {% delete %} 
+                    {% endif %}<br>
+            {% end %}
         </div>
     </body>
 </html>
